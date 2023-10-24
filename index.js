@@ -16,4 +16,3 @@ DOMSelectors.form.addEventListener("submit", function(event){
     `<div class="card"><h2 class="card-header">${DOMSelectors.firstName.value}</h2></div>`)
  );
 });
-
