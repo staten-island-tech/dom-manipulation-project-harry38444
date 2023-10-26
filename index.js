@@ -1,11 +1,12 @@
 const DOMSelectors = {
-    form: document.querySelector("#form"),
-    h2s: document.querySelectorAll("h2"),
-    h3s: document.querySelectorAll("h3"),
+
 button: document.getElementById("button"),
 input: document.querySelector(`#input`),
 input2: document.querySelector(`#input2`),
-delete: document.querySelector(`#delete`)
+delete: document.querySelector(`#delete`),
+form: document.querySelector("#form"),
+    h2s: document.querySelectorAll("h2"),
+    h3s: document.querySelectorAll("h3")
 };
 
 
@@ -21,15 +22,16 @@ DOMSelectors.form.addEventListener("submit", function(event){
     DOMSelectors.form.insertAdjacentHTML("beforeend",
     `<div class="column">
     <div class="card">
-        <h2 class="card-header" id="column">${input}</h2>
-        <h3 class="card-info" id="column">${input2}</h3>
+        <h2 class="card-header" id="column">${input2}</h2>
+
+        <h3 class="card-info" id="column">${input}</h3>
     </div>
-    <button type="submit" id="delete">Delete</button>`);
-   DOMSelectors.input.value = "delete";
-   DOMSelectors.input2.value ="delete";
+    <button type="click" id="delete">Delete</button>`);
+   DOMSelectors.input.value = "";
+   DOMSelectors.input2.value ="";
    });
 
- DOMSelectors.delete.addEventListener("submit", function(){
+ DOMSelectors.delete.addEventListener("click", function(){
     card.remove()
  });
  
