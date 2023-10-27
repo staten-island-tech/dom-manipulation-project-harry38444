@@ -21,3 +21,10 @@ justify-content: space-around;
  border-radius: 20px;
  }
  
+.img 
+  {
+flex-wrap: wrap;
+align-items: center;
+height: 70%;
+width: 70%;
+  }
