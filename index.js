@@ -29,8 +29,9 @@ DOMSelectors.form.addEventListener("submit", function(event){
         <h3 class="card-info" id="column">${input}</h3>
 
         <img src = "${input3}" alt = "" class = "img">
+        <button type="click" id="delete">Delete</button>
     </div>
-    <button type="click" id="delete">Delete</button>`);
+`);
    DOMSelectors.input.value = "";
    DOMSelectors.input2.value ="";
    DOMSelectors.input3.value ="";
