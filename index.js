@@ -35,10 +35,12 @@ DOMSelectors.form.addEventListener("submit", function(event){
    DOMSelectors.input.value = "";
    DOMSelectors.input2.value ="";
    DOMSelectors.input3.value ="";
-
-   document.querySelectorAll('.delete').forEach((button) => {
-    button.addEventListener('click', function(event) {
-        event.target.parentElement.parentElement.remove();
-        });
-    });
+   remove();
 });
+function remove() {
+    let btns = document.querySelectorAll(".delete");
+    btns.forEach((button) => button.addEventListener('click', function (event) {
+        event.target.parentElement.remove();
+    }));
+}
+remove();
