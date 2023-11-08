@@ -29,3 +29,7 @@ height: 60%;
 width: 80%;
 border:2.5px solid #000;
   }
+
+  body {
+    background-color:blueviolet
+  }
